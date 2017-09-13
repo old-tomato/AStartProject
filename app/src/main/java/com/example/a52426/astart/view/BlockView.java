@@ -178,8 +178,8 @@ public class BlockView extends View implements View.OnClickListener {
         RectF edgingRect = new RectF(0 , 0 , needWidth , needHeight);
         canvas.drawRect(edgingRect , edgingPaint);
 
-        canvas.drawText("G: " + g , EDGING_PAINT_WIDTH , fontSize + EDGING_PAINT_WIDTH , tp);
-        canvas.drawText("H: " + h , EDGING_PAINT_WIDTH , needHeight - EDGING_PAINT_WIDTH , tp);
+        canvas.drawText("x: " + position.pX , EDGING_PAINT_WIDTH , fontSize + EDGING_PAINT_WIDTH , tp);
+        canvas.drawText("y: " + position.pY , EDGING_PAINT_WIDTH , needHeight - EDGING_PAINT_WIDTH , tp);
     }
 
     public class Position {
